@@ -72,3 +72,16 @@
 .kittyImage > img {
   padding-block: 10px;
 }
+
+.catInfo{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-inline: 10%;
+}
+
+.catInfo > * {
+  max-width: 70%;
+  margin-inline: 10px;
+}
