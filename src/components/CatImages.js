@@ -1,7 +1,7 @@
 import Navbar from "./Navbar";
 import {useEffect, useState} from "react";
 
-function CatImages({apiKey}){
+function CatImages(){
     const [kitty, setKitty] = useState();
 
     useEffect(() => {

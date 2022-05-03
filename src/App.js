@@ -5,15 +5,13 @@ import CatImages from "./components/CatImages";
 import DetailsView from "./components/DetailsView";
 
 function App() {
-    const apiKey = '1ec86ad7-4ab4-41fb-ba8d-8b5443f86506'
-
     return (
         <>
             <BrowserRouter>
                 <Routes>
-                    <Route path="/" element={<HomeView apiKey={apiKey}/>}/>
-                    <Route path="/images" element={<CatImages apiKey={apiKey}/>}/>
-                    <Route path="/details/:id" element={<DetailsView apiKey={apiKey}/>}/>
+                    <Route path="/" element={<HomeView/>}/>
+                    <Route path="/images" element={<CatImages/>}/>
+                    <Route path="/details/:id" element={<DetailsView/>}/>
                 </Routes>
             </BrowserRouter>
         </>
