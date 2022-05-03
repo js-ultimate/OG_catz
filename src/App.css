@@ -71,6 +71,10 @@
 
 .kittyImage > img {
   padding-block: 10px;
+  max-width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .catInfo{
