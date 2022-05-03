@@ -30,13 +30,13 @@ function DetailsView() {
 
                 {cat ? (
                     <>
-                        <h2>{cat.name}</h2>
+                        <h1>{cat.name}</h1>
 
                         {cat.image !== undefined ? (
-                            <img src={`${cat.image.url}`} alt={`${cat.id}`} style={{'borderRadius': '30px'}}/>) : (
+                            <img src={`${cat.image.url}`} alt={`${cat.id}`} style={{'borderRadius': '30px', 'maxWidth': '500px', 'display': 'block', 'marginLeft': 'auto', 'marginRight': 'auto',}}/>) : (
                             <h5>No image:(</h5>)}
 
-                        <h5>{cat.description}</h5>
+                        <h2>{cat.description}</h2>
 
                         <div className={'catInfo'}>
                             <div>
