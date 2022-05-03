@@ -5,7 +5,7 @@ function Navbar() {
         <div className={'navbar'}>
             <Link to={"/"}><button>Homepage</button></Link>
             <Link to={"/images"}><button>Cat images</button></Link>
-            <p>Click on Cat to view details.</p>
+            <p>Click on cat to view details</p>
         </div>
     )
 }
