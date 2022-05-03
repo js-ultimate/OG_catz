@@ -5,7 +5,7 @@ function CatImages({apiKey}){
     const [kitty, setKitty] = useState();
 
     useEffect(() => {
-        fetchNewKitty();
+        fetchNewKitty().then(() => {})
     }, [])
 
     async function fetchNewKitty() {

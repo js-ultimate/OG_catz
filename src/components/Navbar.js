@@ -1,6 +1,4 @@
-import {Link, Route} from "react-router-dom";
-import HomeView from "./HomeView";
-import CatImages from "./CatImages";
+import {Link} from "react-router-dom";
 
 function Navbar() {
     return (
