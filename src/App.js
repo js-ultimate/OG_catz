@@ -1,25 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import {BrowserRouter, Routes, Route, Link} from "react-router-dom";
+import Navbar from "./components/Navbar";
+import HomeView from "./components/HomeView";
+import CatImages from "./components/CatImages";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const apiKey = '1ec86ad7-4ab4-41fb-ba8d-8b5443f86506'
+
+    return (
+        <>
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/" element={<HomeView apiKey={apiKey}/>}/>
+                    <Route path="/images" element={<CatImages apiKey={apiKey}/>}/>
+                </Routes>
+            </BrowserRouter>
+        </>
+    );
 }
 
 export default App;

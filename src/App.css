@@ -36,3 +36,39 @@
     transform: rotate(360deg);
   }
 }
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+
+.navbar > p {
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.kittyImage {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  margin-inline: 25%;
+  padding-block: 10px;
+
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+.kittyImage > button {
+  margin-inline: 20%;
+  padding: 10px;
+
+  border-radius: 20px;
+}
+
+.kittyImage > img {
+  padding-block: 10px;
+}
